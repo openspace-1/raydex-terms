@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Service - Raydex</title>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+        .page { max-width: 840px; margin: 0 auto; }
+        .paper {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+            padding: 3rem 3.5rem;
+        }
+        @media (max-width: 640px) {
+            body { padding: 1rem 0.5rem; }
+            .paper { padding: 1.75rem 1.25rem; border-radius: 12px; }
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #eef2f6;
+            margin-bottom: 2.5rem;
+        }
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+        }
+        .header .sub {
+            margin-top: 0.4rem;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+        .header .sub strong { color: #334155; }
+        .toc {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.25rem 1.75rem;
+            margin-bottom: 2.5rem;
+        }
+        .toc summary {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #0f172a;
+            cursor: pointer;
+            user-select: none;
+        }
+        .toc ol {
+            margin-top: 0.75rem;
+            columns: 2;
+            column-gap: 2rem;
+            list-style: none;
+            counter-reset: toc-counter;
+        }
+        .toc ol li { counter-increment: toc-counter; margin-bottom: 0.35rem; break-inside: avoid; }
+        .toc ol li::before {
+            content: counter(toc-counter) ".";
+            font-weight: 600;
+            color: #3b82f6;
+            margin-right: 0.4rem;
+        }
+        .toc ol li a { color: #2563eb; text-decoration: none; font-size: 0.9rem; }
+        .toc ol li a:hover { text-decoration: underline; }
+        @media (max-width: 640px) { .toc ol { columns: 1; } }
+        section { margin-bottom: 2.25rem; }
+        section h2 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 0.6rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.4rem;
+        }
+        section h2 .num {
+            color: #3b82f6;
+            font-weight: 700;
+            min-width: 1.8rem;
+        }
+        section p, section li { font-size: 0.95rem; color: #334155; }
+        section p  { margin-bottom: 0.8rem; }
+        section ul, section ol { margin: 0.5rem 0 0.8rem 1.4rem; }
+        section li { margin-bottom: 0.35rem; }
+        section .note {
+            background: #fef9ee;
+            border-left: 4px solid #f59e0b;
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            margin-top: 0.6rem;
+        }
+        .back-top {
+            display: block;
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.85rem;
+        }
+        .back-top a {
+            color: #64748b;
+            text-decoration: none;
+        }
+        .back-top a:hover { color: #2563eb; }
+        hr { border: none; border-top: 1px solid #e2e8f0; margin: 2.5rem 0 1rem; }
+        .footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #94a3b8;
+            padding-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+<div class="paper">
+
+    <div class="header">
+        <h1>Terms of Service</h1>
+        <p class="sub"><strong>Raydex</strong> &mdash; Document Scanner App</p>
+        <p class="sub">Package: <strong>com.document.raydex</strong> | Platform: <strong>Android</strong></p>
+        <p class="sub">Last updated: <strong>May 19, 2026</strong></p>
+    </div>
+
+    <details class="toc" open>
+        <summary>Table of Contents</summary>
+        <ol>
+            <li><a href="#sec1">Acceptance</a></li>
+            <li><a href="#sec2">Definitions</a></li>
+            <li><a href="#sec3">Eligibility</a></li>
+            <li><a href="#sec4">Description of Service</a></li>
+            <li><a href="#sec5">User Accounts</a></li>
+            <li><a href="#sec6">User Content</a></li>
+            <li><a href="#sec7">Permitted &amp; Prohibited Use</a></li>
+            <li><a href="#sec8">Permissions</a></li>
+            <li><a href="#sec9">Data &amp; Privacy</a></li>
+            <li><a href="#sec10">Data We Do NOT Collect</a></li>
+            <li><a href="#sec11">Data Retention &amp; Deletion</a></li>
+            <li><a href="#sec12">Your Rights &amp; Data Portability</a></li>
+            <li><a href="#sec13">Third-Party Services</a></li>
+            <li><a href="#sec14">Advertisements</a></li>
+            <li><a href="#sec15">GDPR &amp; CCPA Compliance</a></li>
+            <li><a href="#sec16">Intellectual Property</a></li>
+            <li><a href="#sec17">Disclaimer of Warranties</a></li>
+            <li><a href="#sec18">Limitation of Liability</a></li>
+            <li><a href="#sec19">Indemnification</a></li>
+            <li><a href="#sec20">Termination</a></li>
+            <li><a href="#sec21">Changes to Terms</a></li>
+            <li><a href="#sec22">Governing Law</a></li>
+            <li><a href="#sec23">Severability</a></li>
+            <li><a href="#sec24">Contact</a></li>
+        </ol>
+    </details>
+
+    <!-- 1 -->
+    <section id="sec1">
+        <h2><span class="num">1.</span> Acceptance of Terms</h2>
+        <p>By downloading, installing, or using Raydex ("the App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to all of these Terms, you must not download or use the App in any manner. These Terms constitute a legally binding agreement between you ("User" or "you") and the developer of Raydex ("Company," "we," "us," or "our").</p>
+    </section>
+
+    <!-- 2 -->
+    <section id="sec2">
+        <h2><span class="num">2.</span> Definitions</h2>
+        <ul>
+            <li><strong>"App"</strong> means the Raydex document scanner mobile application, including all features, content, and updates.</li>
+            <li><strong>"Content"</strong> means any text, images, documents, scans, PDFs, or other materials you process or generate using the App.</li>
+            <li><strong>"Device"</strong> means the mobile device (phone or tablet) on which the App is installed.</li>
+            <li><strong>"OCR"</strong> means optical character recognition, a feature that extracts text from images.</li>
+            <li><strong>"Services"</strong> means the features and functionality provided through the App, including document scanning, image processing, OCR, PDF generation, and file export.</li>
+            <li><strong>"Third-Party Services"</strong> means Google ML Kit and Google Mobile Ads, which are integrated into the App but operated by third parties.</li>
+        </ul>
+    </section>
+
+    <!-- 3 -->
+    <section id="sec3">
+        <h2><span class="num">3.</span> Eligibility</h2>
+        <p>You must be at least 13 years of age to use the App. If you are under 18, you must have a parent or legal guardian review and accept these Terms on your behalf. By using the App, you represent and warrant that you meet these eligibility requirements and that your use complies with all applicable laws and regulations.</p>
+    </section>
+
+    <!-- 4 -->
+    <section id="sec4">
+        <h2><span class="num">4.</span> Description of Service</h2>
+        <p>Raydex is a document scanning application that enables users to:</p>
+        <ul>
+            <li>Capture images of documents using the device camera or import images from the photo library.</li>
+            <li>Process scanned images, including cropping, filtering, perspective correction, and color adjustment.</li>
+            <li>Extract text from images using on-device OCR via Google ML Kit.</li>
+            <li>Export processed documents as PDF files or image files.</li>
+            <li>Save, organize, and share scanned documents.</li>
+        </ul>
+        <p>The App is provided for personal and professional use. All processing occurs locally on your device unless otherwise stated. No internet connection is required for core scanning and OCR functionality.</p>
+    </section>
+
+    <!-- 5 -->
+    <section id="sec5">
+        <h2><span class="num">5.</span> User Accounts</h2>
+        <p>Raydex does not currently require or support user accounts. No registration, login, or account creation is necessary to use the App. All data is stored locally on your device using local storage (Hive). If account-based features are introduced in future updates, additional terms will apply and you will be notified within the App.</p>
+    </section>
+
+    <!-- 6 -->
+    <section id="sec6">
+        <h2><span class="num">6.</span> User Content &amp; Your Rights</h2>
+        <p>You retain full ownership of all Content you scan, import, process, or generate using the App. We do not claim any intellectual property rights over your Content.</p>
+        <p>You represent and warrant that:</p>
+        <ul>
+            <li>You own or have obtained all necessary rights, licenses, and consents to use the Content you process through the App.</li>
+            <li>Your Content does not infringe or violate any third-party rights, including copyright, trademark, privacy, or publicity rights.</li>
+            <li>Your Content complies with all applicable laws and regulations.</li>
+        </ul>
+        <p>We do not monitor, review, or access your Content. It remains stored locally on your device and is never transmitted to our servers. You are solely responsible for maintaining backups of your Content.</p>
+    </section>
+
+    <!-- 7 -->
+    <section id="sec7">
+        <h2><span class="num">7.</span> Permitted &amp; Prohibited Use</h2>
+        <p><strong>Permitted Use.</strong> You may use the App to scan, process, and export documents for lawful personal or professional purposes.</p>
+        <p><strong>Prohibited Use.</strong> You agree not to:</p>
+        <ul>
+            <li>Use the App for any unlawful activity or in violation of any applicable local, state, national, or international law.</li>
+            <li>Scan, process, or store any Content that is illegal, fraudulent, defamatory, harassing, obscene, pornographic, or infringing upon the rights of others.</li>
+            <li>Attempt to reverse engineer, decompile, disassemble, or derive the source code of the App, except to the extent expressly permitted by applicable law.</li>
+            <li>Modify, adapt, sublicense, translate, sell, or create derivative works based on the App without prior written consent.</li>
+            <li>Use the App in any manner that could damage, disable, overburden, or impair the App or interfere with any other party's use of the App.</li>
+            <li>Circumvent, disable, or interfere with security-related features or features that enforce limitations on use.</li>
+            <li>Use the App to distribute malware, viruses, or other harmful code.</li>
+        </ul>
+    </section>
+
+    <!-- 8 -->
+    <section id="sec8">
+        <h2><span class="num">8.</span> Device Permissions</h2>
+        <p>The App requires access to certain device features to function. When you first use relevant features, you will be prompted to grant the following permissions:</p>
+        <ul>
+            <li><strong>Camera (<code>CAMERA</code>).</strong> Required to capture images of documents in real time using your device's camera. The camera is only active while you explicitly use the scan feature.</li>
+            <li><strong>Read Images (<code>READ_MEDIA_IMAGES</code> on Android 13+).</strong> Required to import existing images and documents from your device gallery or file system into the App. On Android 12 and below, this uses the legacy <code>READ_EXTERNAL_STORAGE</code> permission.</li>
+            <li><strong>Write Storage (<code>WRITE_EXTERNAL_STORAGE</code> on Android 12 and below).</strong> Required to save scanned documents, generated PDFs, and other exported files to your device storage. On Android 13+, write access uses scoped storage.</li>
+            <li><strong>Internet (<code>INTERNET</code>).</strong> Required for loading advertisements via Google Mobile Ads.</li>
+        </ul>
+        <p>You may grant or revoke these permissions at any time through your device Settings. Revoking a permission may limit or disable certain features of the App.</p>
+        <p class="note"><strong>Permission Scoping:</strong> We do not request unnecessary permissions. Video and audio permissions are not used by the App. All requested permissions are directly tied to core features.</p>
+        <p class="note"><strong>Data Protection:</strong> Camera and photo library access are used exclusively when you explicitly initiate those features (e.g., clicking "Scan" or "Import"). The App does not access your camera or gallery in the background.</p>
+    </section>
+
+    <!-- 9 -->
+    <section id="sec9">
+        <h2><span class="num">9.</span> Data &amp; Privacy</h2>
+        <p>Your privacy is important to us. Key privacy points relevant to these Terms include:</p>
+        <ul>
+            <li><strong>On-Device Processing.</strong> All document scanning, image processing, and OCR text recognition occur entirely on your device using Google ML Kit. No scanned documents, images, extracted text, or PDFs are ever uploaded to our servers or any cloud service.</li>
+            <li><strong>Local Storage Only.</strong> All content you create—scanned images, extracted text, PDFs, settings, and preferences—is stored exclusively in local device storage using Hive database and the device file system. You have complete control over this data and can delete it at any time.</li>
+            <li><strong>No Analytics or Crash Reporting.</strong> The App does not collect anonymized usage statistics, crash reports, telemetry data, or any behavioral analytics. No data is sent to our servers for analysis.</li>
+            <li><strong>Advertising &amp; Consent.</strong> The App integrates Google Mobile Ads for monetization. Before ads are served, you must provide consent through Google's User Messaging Platform (UMP). Google Mobile Ads may collect device identifiers (Advertising ID), IP address, and other data to serve and measure advertisements. See Section 14 for details.</li>
+        </ul>
+    </section>
+
+    <!-- 10 -->
+    <section id="sec10">
+        <h2><span class="num">10.</span> Data We Do NOT Collect</h2>
+        <p>To be completely transparent, the following data is <strong>NOT</strong> collected, accessed, or transmitted by Raydex or stored on our servers:</p>
+        <ul>
+            <li><strong>No Location Data.</strong> The App does not access, request, or use GPS, cellular, or any approximate location data.</li>
+            <li><strong>No Personal Information.</strong> The App does not collect or transmit your name, email address, phone number, username, or other personally identifiable information. No registration or account is required.</li>
+            <li><strong>No Financial Data.</strong> The App does not collect credit card numbers, bank account information, payment details, or any financial data.</li>
+            <li><strong>No Document Content Uploaded.</strong> Scanned documents, photos, images, OCR-extracted text, and generated PDFs remain entirely on your device and are <strong>never uploaded</strong> to our servers or any third-party cloud service.</li>
+            <li><strong>No Browsing History.</strong> The App does not track which websites you visit or build a profile of your internet activity outside the App.</li>
+            <li><strong>No App Usage Analytics.</strong> We do not collect data about which features you use, how long you use them, or when you use them.</li>
+            <li><strong>No System Information.</strong> The App does not collect detailed system information, installed apps, or hardware specifications (except what is necessary for basic device compatibility).</li>
+            <li><strong>No Contacts, Calendar, or Files.</strong> The App does not access your device contacts, calendar events, call history, text messages, or files outside of those you explicitly import for scanning.</li>
+        </ul>
+    </section>
+
+    <!-- 11 -->
+    <section id="sec11">
+        <h2><span class="num">11.</span> Data Retention &amp; Deletion</h2>
+        <p><strong>Data Retention.</strong> All data generated by you using the App (scanned images, extracted text, PDFs, settings) is retained only on your device for as long as the App is installed. We do not retain any copies of your data on external servers.</p>
+        <p><strong>Deleting Your Data.</strong> You have complete control over your data. You can:</p>
+        <ul>
+            <li><strong>Delete Individual Documents.</strong> Use the App's delete function to remove specific scanned documents, images, or PDFs at any time.</li>
+            <li><strong>Clear All App Data.</strong> Uninstall the App or use your device's app storage settings to clear all Raydex data, including local storage (Hive database) and app settings.</li>
+            <li><strong>Reset Your Device.</strong> Factory resetting your device will permanently delete all Raydex data stored on that device.</li>
+        </ul>
+        <p><strong>Backup Responsibility.</strong> You are responsible for maintaining backups of important documents. We do not automatically back up your data to cloud services.</p>
+    </section>
+
+    <!-- 12 -->
+    <section id="sec12">
+        <h2><span class="num">12.</span> Your Rights &amp; Data Portability</h2>
+        <p>You have the following rights regarding your data:</p>
+        <ul>
+            <li><strong>Right to Access.</strong> You have the right to access all data the App has generated. All your data is stored locally on your device and accessible through the App interface.</li>
+            <li><strong>Right to Delete.</strong> You have the right to delete any or all of your data at any time (see Section 11).</li>
+            <li><strong>Right to Data Portability.</strong> You can export your scanned documents and generated PDFs in standard formats (PDF, JPEG, PNG) to transfer them to other devices or applications.</li>
+            <li><strong>Right to Opt-Out of Advertising.</strong> You can opt out of personalized advertising through your device settings (see Section 14).</li>
+            <li><strong>No Automated Decision Making.</strong> Raydex does not make any automated decisions about you or use your data for profiling.</li>
+        </ul>
+    </section>
+
+    <!-- 13 -->
+    <section id="sec13">
+        <h2><span class="num">13.</span> Third-Party Services</h2>
+        <p>The App integrates the following third-party services, each of which operates under its own terms and privacy policies:</p>
+        <ul>
+            <li><strong>Google ML Kit (ML Kit Text Recognition).</strong> Performs on-device OCR text recognition. Your images are processed locally on your device using ML Kit's on-device models. Images are <strong>not sent</strong> to Google's servers for processing. However, if you enable Google's usage and diagnostics reporting in your device settings, Google may collect diagnostic data. See <a href="https://developers.google.com/ml-kit/terms" target="_blank" rel="noopener">Google ML Kit Terms</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+            <li><strong>Google Mobile Ads (AdMob).</strong> Serves personalized and contextual advertisements within the App. AdMob may collect your Advertising ID, IP address, device information, and usage patterns to deliver and measure ads. Your consent via the UMP Consent Form is required before ads are served. See <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Ads Policies</a> and <a href="https://support.google.com/admob" target="_blank" rel="noopener">AdMob Help Center</a>.</li>
+            <li><strong>Google User Messaging Platform (UMP).</strong> Manages user consent for advertising and analytics. The UMP Consent Form displays your privacy choices when you first open the App. Your selections are stored locally on your device. See <a href="https://support.google.com/admob/answer/10113207" target="_blank" rel="noopener">UMP Documentation</a>.</li>
+        </ul>
+        <p>We are not responsible for the practices, data collection, or privacy policies of these third-party services. Your use of these services is governed solely by their respective terms and policies. We strongly encourage you to review their privacy policies and opt-out options.</p>
+    </section>
+
+    <!-- 14 -->
+    <section id="sec14">
+        <h2><span class="num">14.</span> Advertisements &amp; User Messaging Platform</h2>
+        <p><strong>Ad Types and Consent.</strong> Raydex displays rewarded and interstitial advertisements served by Google Mobile Ads (AdMob). Before any ads are shown, you must provide consent via Google's User Messaging Platform (UMP) Consent Form. Your consent choices are stored locally on your device and used to determine what ads you see:</p>
+        <ul>
+            <li><strong>Personalized Ads (Consent Required).</strong> If you grant consent to personalized advertising, ads are based on your device's Advertising ID, app usage patterns, and browsing activity across other apps and websites. Google uses this data to show ads tailored to your interests.</li>
+            <li><strong>Non-Personalized Ads (Limited Consent).</strong> If you deny consent to personalized advertising, you still see ads, but they are limited to contextual information (your general content within the App) and non-identifying device information.</li>
+        </ul>
+        <p><strong>Device Identifiers Used by AdMob.</strong> To serve advertisements, Google Mobile Ads may collect:</p>
+        <ul>
+            <li>Your device's unique Advertising ID (also called GAID — Google Advertising ID)</li>
+            <li>IP address</li>
+            <li>Device model, OS version, and display metrics</li>
+            <li>App interactions and engagement metrics</li>
+        </ul>
+        <p><strong>Revoking Consent and Opting Out.</strong> You can change your ad consent choices at any time through the App's Settings screen, where you can access the Privacy Settings to update your preferences. Additionally, you can opt out of personalized advertising through your device settings:</p>
+        <ul>
+            <li><strong>Android:</strong> Open Settings &gt; Google &gt; Ads &gt; Tap "Opt out of Ads Personalization". You can also reset your Advertising ID at any time.</li>
+        </ul>
+        <p><strong>Important Note:</strong> Opting out of personalized advertising will <strong>not</strong> reduce the number of ads shown in the App. You will still see ads; they will simply be less relevant to your interests and based only on the content you are currently viewing in the App.</p>
+        <p><strong>Ad Quality and Frequency.</strong> The App shows rewarded ads (in exchange for features like PDF export) and interstitial ads (between navigational events). You can always click the X button to close an ad, and closing an ad will not affect the feature you were attempting to use.</p>
+    </section>
+
+    <!-- 15 -->
+    <section id="sec15">
+        <h2><span class="num">15.</span> GDPR &amp; CCPA Compliance</h2>
+        <p><strong>GDPR Compliance (European Users).</strong> If you are located in the European Union, European Economic Area (EEA), United Kingdom, or Switzerland, the following rights apply to you under the General Data Protection Regulation (GDPR, including UK GDPR):</p>
+        <ul>
+            <li><strong>Right of Access:</strong> You have the right to request and receive a copy of all personal data Raydex holds about you. Since Raydex stores no personal data on servers (all data is local to your device), your data is already accessible to you via the App itself.</li>
+            <li><strong>Right to Erasure ("Right to Be Forgotten"):</strong> You can delete any or all of your personal data from the App at any time through the App's delete functions or by uninstalling the App entirely (see Section 11).</li>
+            <li><strong>Right to Restrict Processing:</strong> You can restrict how your data is processed by declining consent in the UMP Consent Form and modifying Privacy Settings.</li>
+            <li><strong>Right to Data Portability:</strong> You can export your scanned documents and PDFs in standard formats (PDF, JPEG, PNG) to transfer them to other devices or services.</li>
+            <li><strong>Right to Object to Processing:</strong> You can opt out of personalized ad targeting through your Privacy Settings (Section 14) or device settings.</li>
+            <li><strong>Rights Related to Automated Decision Making and Profiling:</strong> Raydex does not use automated decision-making or profiling based on your personal data.</li>
+        </ul>
+        <p>To exercise any GDPR rights, contact us at <a href="mailto:support@raydex.app">support@raydex.app</a> with "GDPR Request" in the subject line. We will respond within 30 days as required by GDPR.</p>
+        <p><strong>Legal Basis for Processing.</strong> Raydex processes limited data (Advertising ID from Google Mobile Ads) only on the legal basis of your consent (provided via the UMP Consent Form) for the purpose of serving advertisements.</p>
+        <p><strong>CCPA Compliance (California Users).</strong> If you are a resident of California, the following rights apply to you under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA):</p>
+        <ul>
+            <li><strong>Right to Know:</strong> You have the right to know what personal information is collected. Raydex collects minimal data; only Google Mobile Ads collects your Advertising ID and usage data for ad serving.</li>
+            <li><strong>Right to Delete:</strong> You have the right to request deletion of personal information. You can delete all App data by uninstalling the App or clearing App storage through device settings.</li>
+            <li><strong>Right to Opt-Out of "Sales":</strong> Raydex does <strong>NOT sell</strong> your personal information to third parties. Google Mobile Ads may use your data for ad personalization, which some jurisdictions may consider a "sale of personal information." You can opt out through Privacy Settings.</li>
+            <li><strong>Right to Non-Discrimination:</strong> You will not be discriminated against for exercising your CCPA rights.</li>
+        </ul>
+        <p>To exercise any CCPA rights, contact us at <a href="mailto:support@raydex.app">support@raydex.app</a> with "CCPA Request" in the subject line. We will verify your identity and respond within 45 days as required by CCPA.</p>
+        <p><strong>Data Security &amp; Protection.</strong> All your data is stored locally on your device using secure local storage (Hive database). We implement industry-standard practices to protect your data. However, no method of transmission or local storage is 100% secure. You are responsible for maintaining the security and regular backups of your device.</p>
+    </section>
+
+    <!-- 16 -->
+    <section id="sec16">
+
+    <!-- 17 -->
+    <section id="sec17">
+        <h2><span class="num">17.</span> Intellectual Property</h2>
+        <p>The App itself — including but not limited to its source code, design, layout, graphics, icons, logos, trademarks, user interface, and underlying technology — is the exclusive property of the developer and is protected by copyright, trademark, and other intellectual property laws.</p>
+        <p>Except for your User Content (which you retain ownership of), nothing in these Terms grants you any right, title, or interest in the App or any of its components. You are granted a limited, non-exclusive, non-transferable, revocable license to use the App for its intended purpose in accordance with these Terms. This license does not include any right to:</p>
+        <ul>
+            <li>Copy, reproduce, distribute, or publicly display the App or its components (other than output documents you generate).</li>
+            <li>Modify, adapt, or create derivative works based on the App.</li>
+            <li>Remove, alter, or obscure any copyright, trademark, or other proprietary notices.</li>
+        </ul>
+    </section>
+
+    <!-- 18 -->
+    <section id="sec18">
+        <h2><span class="num">18.</span> Disclaimer of Warranties</h2>
+        <p>THE APP IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:</p>
+        <ul>
+            <li>IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.</li>
+            <li>WARRANTIES THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, SECURE, OR FREE FROM VIRUSES OR OTHER HARMFUL COMPONENTS.</li>
+            <li>WARRANTIES REGARDING THE ACCURACY, COMPLETENESS, OR RELIABILITY OF OCR TEXT RECOGNITION, IMAGE PROCESSING, OR PDF GENERATION.</li>
+        </ul>
+        <p>OCR technology is not perfect and may produce inaccurate or incomplete text extraction. You should review and verify all OCR output before relying on it. PDF generation depends on the input images and device capabilities; we do not guarantee that generated PDFs will render identically across all devices and viewers.</p>
+    </section>
+
+    <!-- 19 -->
+    <section id="sec19">
+        <h2><span class="num">19.</span> Limitation of Liability</h2>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE COMPANY, ITS AFFILIATES, OFFICERS, DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATED TO:</p>
+        <ul>
+            <li>YOUR USE OR INABILITY TO USE THE APP.</li>
+            <li>THE ACCURACY OR INACCURACY OF OCR TEXT RECOGNITION RESULTS.</li>
+            <li>LOSS, CORRUPTION, OR INADVERTENT DELETION OF YOUR DOCUMENTS, IMAGES, OR OTHER CONTENT.</li>
+            <li>UNAUTHORIZED ACCESS TO YOUR DEVICE OR LOCAL DATA.</li>
+            <li>ANY CONDUCT OR CONTENT OF ANY THIRD PARTY, INCLUDING THIRD-PARTY ADVERTISERS.</li>
+        </ul>
+        <p>OUR TOTAL LIABILITY TO YOU FOR ANY CLAIMS ARISING FROM OR RELATING TO THESE TERMS OR THE APP SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID TO US FOR USE OF THE APP (IF ANY) OR (B) ONE HUNDRED DOLLARS ($100). SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES, SO THESE LIMITATIONS MAY NOT APPLY TO YOU.</p>
+    </section>
+
+    <!-- 20 -->
+    <section id="sec20">
+        <h2><span class="num">20.</span> Indemnification</h2>
+        <p>You agree to indemnify, defend, and hold harmless the Company, its affiliates, officers, directors, employees, and agents from and against any and all claims, liabilities, damages, losses, costs, and expenses (including reasonable legal fees) arising out of or related to:</p>
+        <ul>
+            <li>Your use of the App in violation of these Terms.</li>
+            <li>Your Content, including any claim that your Content infringes or violates the rights of a third party.</li>
+            <li>Your violation of any applicable law or regulation.</li>
+        </ul>
+    </section>
+
+    <!-- 21 -->
+    <section id="sec21">
+        <h2><span class="num">21.</span> Termination</h2>
+        <p>We reserve the right to suspend or terminate your access to the App at any time, with or without notice, if you breach any provision of these Terms. Upon termination:</p>
+        <ul>
+            <li>Your license to use the App immediately ceases.</li>
+            <li>You must uninstall and cease all use of the App.</li>
+        </ul>
+        <p>You may terminate these Terms at any time by uninstalling the App and ceasing all use. Sections 6 (User Content), 12 (Intellectual Property), 13 (Disclaimer), 14 (Limitation of Liability), 15 (Indemnification), and 18 (Governing Law) shall survive any termination.</p>
+    </section>
+
+    <!-- 22 -->
+    <section id="sec22">
+        <h2><span class="num">22.</span> Changes to These Terms</h2>
+        <p>We reserve the right to modify or update these Terms at any time. When we make changes, we will update the "Last updated" date at the top of this page. Material changes may be additionally announced within the App. Your continued use of the App after any changes take effect constitutes your acceptance of the revised Terms. We encourage you to review these Terms periodically.</p>
+    </section>
+
+    <!-- 23 -->
+    <section id="sec23">
+        <h2><span class="num">23.</span> Governing Law &amp; Dispute Resolution</h2>
+        <p>These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which the developer operates, without regard to its conflict of laws principles. Any disputes arising out of or relating to these Terms or the App shall be resolved through binding arbitration in accordance with the rules of the applicable arbitration association, rather than in court, except that you may assert claims in small claims court if your claims qualify. You agree that any arbitration shall be conducted on an individual basis and not as a class, consolidated, or representative action.</p>
+    </section>
+
+    <!-- 24 -->
+    <section id="sec24">
+        <h2><span class="num">24.</span> Severability</h2>
+        <p>If any provision of these Terms is found to be unlawful, void, or unenforceable by a court or arbitrator of competent jurisdiction, that provision shall be deemed severable and shall not affect the validity and enforceability of the remaining provisions. The remaining provisions shall continue in full force and effect.</p>
+    </section>
+
+    <!-- 25 -->
+    <section id="sec25">
+        <h2><span class="num">25.</span> Contact Information</h2>
+        <p>If you have any questions, concerns, or requests regarding these Terms or our privacy practices, please contact us:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:support@raydex.app">support@raydex.app</a></li>
+            <li><strong>Subject line for privacy requests:</strong> Include "GDPR Request", "CCPA Request", or "Privacy Inquiry" as appropriate.</li>
+            <li><strong>App Store Listing:</strong> Refer to the contact information provided in the official app store listing for Raydex.</li>
+        </ul>
+        <p>We aim to respond to all inquiries within 5 business days.</p>
+    </section>
+
+    <hr />
+
+    <p class="back-top"><a href="#">&uarr; Back to top</a></p>
+
+    <p class="footer">&copy; 2026 Raydex (StormRay). All rights reserved. Package: com.document.raydex | <a href="https://openspace-1.github.io/raydex-privacy-policy/" style="color: #94a3b8; text-decoration: none;" target="_blank">Privacy Policy</a></p>
+
+</div>
+</div>
+</body>
+</html>
